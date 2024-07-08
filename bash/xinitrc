@@ -1,0 +1,3 @@
+exec slstatus &
+exec feh --randomize --bg-scale /home/ford/Wallpapers/* &
+exec dwm

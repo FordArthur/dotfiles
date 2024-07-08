@@ -1,0 +1,13 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+#alias newbkgrnd='feh --randomize --bg-scale /home/ford/Wallpapers/*'
+. "$HOME/.cargo/env"
+PS1='\[\e[38;5;196m\][\[\e[38;5;202m\]\u\[\e[38;5;64m\]@\[\e[38;5;68m\]\h\[\e[38;5;196m\]]\[\e[0m\] \[\e[38;5;226m\]{\[\e[38;5;51m\]\t\[\e[38;5;226m\]}\[\e[0m\] \[\e[38;5;27m\]\w\[\e[0m\] \[\e[38;5;57m\]λ\[\e[38;5;93m\]>\[\e[0m\] '
+[ -f "/home/ford/.ghcup/env" ] && . "/home/ford/.ghcup/env" # ghcup-env
